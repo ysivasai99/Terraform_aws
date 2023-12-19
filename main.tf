@@ -69,13 +69,13 @@ provider "aws" {
                 vpc_id      = aws_vpc.Myvpc.id
 
                 ingress {
-                        description      = "Allow ssh"
+                        description      = "Allow only ssh"
                         from_port        = 22
                         to_port          = 22
                         protocol         = "ssh"
                 }
                 ingress {
-                        description      = "Allow tcp"
+                        description      = "Allow only tcp"
                         from_port        = 80
                         to_port          = 80
                         protocol         = "tcp"
